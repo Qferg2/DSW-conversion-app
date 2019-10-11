@@ -23,7 +23,7 @@ def render_response():
     favorite_color = request.args['color'] #get user's input for color input
     if favorite_color == 'pink':
         response = "That's my favorite color!"
-    elif favorite_color == 'bruh'
+    elif favorite_color == 'bruh':
         response = "BRUH"
     else:
         response = "Ok."
