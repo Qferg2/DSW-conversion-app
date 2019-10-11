@@ -2,8 +2,13 @@
 
 {% set active_page = "page1" %}
 
-{% block title %}Page 1{% endblock %}
+{% block title %}Favorite Color{% endblock %}
 
 {% block content %}
-  <h1>Page 1</h1>
+  <form action='/response'>
+      What is your favorite color?<br>
+      <input type="text" name="color">
+      <br><br>
+      <input type="submit">
+    </form>
 {% endblock %}
