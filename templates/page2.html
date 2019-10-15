@@ -2,8 +2,13 @@
 
 {% set active_page = "page2" %}
 
-{% block title %}Page 2{% endblock %}
+{% block title %}Dollars to Euros{% endblock %}
 
 {% block content %}
-  <h1>Page 2</h1>
+  <form action='/response'>
+      Input a number in Dollars to convert to Euros<br>
+      <input type="text" name="color">
+      <br><br>
+      <input type="submit">
+    </form>
 {% endblock %}
