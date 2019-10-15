@@ -2,8 +2,13 @@
 
 {% set active_page = "page3" %}
 
-{% block title %}Page 3{% endblock %}
+{% block title %}Dollars to Pounds{% endblock %}
 
 {% block content %}
-  <h1>Page 3</h1>
+  <form action='/response'>
+      Input a number in Dollars to convert to Pounds<br>
+      <input type="text" name="color">
+      <br><br>
+      <input type="submit">
+    </form>
 {% endblock %}
