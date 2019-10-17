@@ -23,10 +23,6 @@ def render_response():
     dollar_amount = request.args['Dollars'] #get user's input for color input
     if dollar_amount == x:
         response = x*19.16
-    elif dollar_amount == 2:
-        response = "BRUH"
-    else:
-        response = "Ok."
     return render_template('response.html', responseFromServer=response)
     
 if __name__=="__main__":
