@@ -20,7 +20,7 @@ def render_page3():
 
 @app.route("/response")
 def render_response():
-    dollar_amount = request.args['number'] #get user's input for color input
+    dollar_amount = request.args['Dollars'] #get user's input for color input
     if dollar_amount == 1:
         response = "That's my favorite color!"
     elif dollar_amount == 2:
