@@ -21,7 +21,7 @@ def render_page3():
 @app.route("/response")
 def render_response():
     dollar_amount = request.args['Dollars'] #get user's input for color input
-    dollar_amount = x
+    
     if dollar_amount == x:
         response = x*19.16
     
