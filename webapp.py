@@ -25,13 +25,13 @@ def render_response():
     return render_template('response.html', responseFromServer=response)
 
 @app.route("/response2")
-def render_response():
+def render_response2():
     dollar_amount = float(request.args['Dollars']) #get user's input for color input
     response2 = dollar_amount*0.90
     return render_template('response2.html', responseFromServer2=response2)
 
 @app.route("/response3")
-def render_response():
+def render_response3():
     dollar_amount = float(request.args['Dollars']) #get user's input for color input
     response3 = dollar_amount*0.78
     return render_template('response3.html', responseFromServer3=response3)
