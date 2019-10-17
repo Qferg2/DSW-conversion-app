@@ -22,8 +22,7 @@ def render_page3():
 def render_response():
     dollar_amount = request.args['Dollars'] #get user's input for color input
     
-    if dollar_amount == x:
-        response = x*19.16
+    response = dollar_amount*19.16
     
     return render_template('response.html', responseFromServer=response)
     
