@@ -21,19 +21,19 @@ def render_page3():
 @app.route("/response")
 def render_response():
     dollar_amount = float(request.args['Dollars']) #get user's input for color input
-    response = dollar_amount*19.16 'MXN'
+    response = dollar_amount*19.16 "MXN"
     return render_template('response.html', responseFromServer=response)
 
 @app.route("/response2")
 def render_response2():
     dollar_amount = float(request.args['Dollars']) #get user's input for color input
-    response2 = dollar_amount*0.90 'EUR'
+    response2 = dollar_amount*0.90 "EUR"
     return render_template('response2.html', responseFromServer2=response2)
 
 @app.route("/response3")
 def render_response3():
     dollar_amount = float(request.args['Dollars']) #get user's input for color input
-    response3 = dollar_amount*0.78 'GBP'
+    response3 = dollar_amount*0.78 "GBP"
     return render_template('response3.html', responseFromServer3=response3)
 
 if __name__=="__main__":
